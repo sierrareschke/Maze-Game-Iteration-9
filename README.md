@@ -36,7 +36,7 @@ All of this can be achieved through functional decomposition of more complicated
 
 * An implementation of the StrategyProvider Interface (5 points)
 * An implementation of the Strategy Interface (10 points)
-* A properly structured JAR file with the above code and the SPI Interface file in the src/main/resources/META_INF/services directory (5 points)
+* A properly structured JAR file with the above code and the SPI Interface file in the src/main/resources/META-INF/services directory (5 points)
 * The JAR must be loadable by the Professor's server code (5 points)
 * The Strategy must be instantiatable and run without errors in the Professor's server code (5 points)
 * 100% LINE coverage of your getCommand() method (10 points)
