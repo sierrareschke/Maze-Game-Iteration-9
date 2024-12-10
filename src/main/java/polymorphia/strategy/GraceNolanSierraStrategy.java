@@ -4,6 +4,7 @@ import csci.ooad.polymorphia.intf.*;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
 
 public class GraceNolanSierraStrategy implements Strategy {
     private final CommandFactory commandFactory;
@@ -19,9 +20,36 @@ public class GraceNolanSierraStrategy implements Strategy {
         // TODO: implement your strategy here
         Room currentRoom = iCharacter.getCurrentRoom();
 
-        // TODO - flee if demon in room ? (can we check if there's a demon?)
+        Boolean isCreature = currentRoom.getCharacters()
+                .stream()
+                .anyMatch(character -> character.isCreature());
 
-        // TODO - put on armor if present
+        Boolean healthy = iCharacter.getHealth() > 3.0;
+
+        ICharacter weakestCreature = currentRoom.getCharacters()
+                .stream()
+                .filter(ICharacter::isCreature) // Select only creatures
+                .min(Comparator.comparingDouble(ICharacter::getHealth)) // Find the one with the least health
+                .orElse(null); // Return null if no creatures are present
+
+
+        if(isCreature && healthy){
+            return commandFactory.createFightCommand(iCharacter,weakestCreature);
+        }
+
+        Random random = new Random();
+
+        List<String> neighbors = currentRoom.getNeighborRoomNames();
+
+        String targetRoom = neighbors.isEmpty()
+                ? null // Or handle the empty case appropriately
+                : neighbors.get(random.nextInt(neighbors.size()));
+
+        if(isCreature && targetRoom != null){
+            return commandFactory.createMoveCommand(iCharacter,targetRoom);
+        }
+
+
         List<IArmor> armorItems = currentRoom.getArmoredSuits();
         if (!armorItems.isEmpty()) {
             return commandFactory.createWearCommand(iCharacter, armorItems.get(0));
@@ -37,7 +65,6 @@ public class GraceNolanSierraStrategy implements Strategy {
             return commandFactory.createEatCommand(iCharacter, bestFood);
         }
 
-        // TODO - fight if have more health than creature ?
 
 
         // Default: Do nothing
