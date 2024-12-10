@@ -13,6 +13,14 @@ Comments/Assumptions: None
 IMPORTANT: You will submit this assignment via a link to your GIT repository AND your JAR file.
 
 ## Grading Rubric:
+Team Members:
+* Nolan Brady
+* Grace Ohlsen
+* Sierra Reschke
+
+Notes:
+The given terminal commands were run to create the jar file. 
+Removed build folder from .gitignore so the .jar file is present in the repository as well as the uploaded file.
 
 ### Deductions
 
