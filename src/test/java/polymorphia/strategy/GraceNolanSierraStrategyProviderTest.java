@@ -9,7 +9,7 @@ import java.util.ServiceLoader;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TeamNameStrategyProviderTest {
+class GraceNolanSierraStrategyProviderTest {
 
     @Test
     // TODO: This test should run successfully when you have configured your

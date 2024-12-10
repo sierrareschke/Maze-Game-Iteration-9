@@ -1,2 +1,1 @@
-// TODO: change this path name below to your StrategyProvider class (then delete this line)
-polymorphia.strategy.TeamNameStrategyProvider
+polymorphia.strategy.GraceNolanSierraStrategyProvider

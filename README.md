@@ -68,8 +68,8 @@ You should verify that the contents of the JAR is correct by running the `jar` c
  inflated: META-INF/MANIFEST.MF
   created: polymorphia/
   created: polymorphia/strategy/
- inflated: polymorphia/strategy/TeamNameStrategyProvider.class
- inflated: polymorphia/strategy/TeamNameStrategy.class
+ inflated: polymorphia/strategy/GraceNolanSierraStrategyProvider.class
+ inflated: polymorphia/strategy/GraceNolanSierraStrategy.class
   created: META-INF/services/
  inflated: META-INF/services/csci.ooad.polymorphia.intf.StrategyProvider
 ```
