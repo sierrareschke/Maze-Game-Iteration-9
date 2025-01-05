@@ -1,54 +1,26 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/6JDmKfq-)
-# OOAD Homework 10:
 ## Custom Strategy Project
-#### (40 points + extra credit for top three teams)
 
-NOTE: Expect some minor edits/updates
-
-Introduction
-Team Members:
-Java Version: 21
-Comments/Assumptions: None
-
-IMPORTANT: You will submit this assignment via a link to your GIT repository AND your JAR file.
-
-## Grading Rubric:
 Team Members:
 * Nolan Brady
 * Grace Ohlsen
 * Sierra Reschke
 
+* Java Version: 21
+
+
 Notes:
 The given terminal commands were run to create the jar file. 
 Removed build folder from .gitignore so the .jar file is present in the repository as well as the uploaded file.
 
-### Deductions
 
-    NOTE: for this assignment you do NOT need to worry about method coverage and you do NOT need to submit a screenshot of the coverage
+### Implemented Capabilities
 
-* Meaningful names for everything: variables, methods, classes, interfaces, etc. (1% off for each bad name, up to 10% total)
-* No "magic" numbers or strings (1% off for each one, up to 10%)
-* No System.out.println() calls anywhere in your main code – replace with logging (see below) or eliminate outright. 1% off for each System.out.println statement in src/main/java code.
-
-### Method Construction Possible Deductions (max is listed under Required Capabilities)
-
-Methods should be:
-* "short" -- with very few exceptions all methods should fit on a screen using a readable font.
-* well named (duh).
-* properly denoted as instance methods vs. static methods (static methods don't reference the _this_ pointer).
-* limited complexity (level of indentation due to control structures).
-* not have comments that could be turned into just as readable code.
-
-All of this can be achieved through functional decomposition of more complicated methods (see lecture on October 2nd).
-
-### Required Capabilities
-
-* An implementation of the StrategyProvider Interface (5 points)
-* An implementation of the Strategy Interface (10 points)
-* A properly structured JAR file with the above code and the SPI Interface file in the src/main/resources/META-INF/services directory (5 points)
-* The JAR must be loadable by the Professor's server code (5 points)
-* The Strategy must be instantiatable and run without errors in the Professor's server code (5 points)
-* 100% LINE coverage of your getCommand() method (10 points)
+* An implementation of the StrategyProvider Interface 
+* An implementation of the Strategy Interface
+* A properly structured JAR file with the above code and the SPI Interface file in the src/main/resources/META-INF/services directory
+* The JAR must be loadable by the Professor's server code 
+* The Strategy must be instantiatable and run without errors in the Professor's server code
+* 100% LINE coverage of your getCommand() method
 
 ## Building the JAR file
 
