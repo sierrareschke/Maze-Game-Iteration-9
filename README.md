@@ -1,9 +1,6 @@
 ## Custom Strategy Project
 
-Team Members:
-* Nolan Brady
-* Grace Ohlsen
-* Sierra Reschke
+Team Members: Sierra Reschke, Nolan Brady, Grace Ohlsen
 
 * Java Version: 21
 
