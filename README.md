@@ -2,7 +2,7 @@
 
 Team Members: Sierra Reschke, Nolan Brady, Grace Ohlsen
 
-* Java Version: 21
+Java Version: 21
 
 
 Notes:
